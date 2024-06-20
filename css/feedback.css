@@ -1,0 +1,28 @@
+.feedback_block_btns {
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: start;
+}
+
+.feedback_section {
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.feedback_block {
+    background: white;
+    padding: 30px;
+    border-radius: 13px;
+    gap: 15px;
+    min-height: 200px;
+}
+
+.feedback_block_top {
+    width: max-content;
+    gap: 10px;
+}
+.profile_img svg {
+    width: 20px;
+    height: 20px;
+}

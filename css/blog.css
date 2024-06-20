@@ -1,0 +1,51 @@
+
+.blog_sectii {
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.blog_container {
+    display: grid;
+    margin-top: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.blog_block {
+    position: relative;
+}
+
+.blog_block_img {
+    width: 100%;
+}
+
+.blog_block_img img {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.blog_block_content {
+    gap: 15px;
+    padding: 20px;
+    background: white;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    min-height: 15  0px;
+    flex: 1 1 auto;
+}
+
+.line_pole {
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.btn_line_pole {
+    padding: 5px 10px;
+    width: max-content;
+}
+.black_bg {
+    background: #0000005f;
+    color: white;
+    border-radius: 8px;
+}

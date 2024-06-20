@@ -1,0 +1,15 @@
+.block_status {
+    padding: 50px 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.277);
+    max-width: 640px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.form_status {
+    gap: 15px;
+    text-align: center;
+}

@@ -1,0 +1,130 @@
+
+
+.one_section_bottom {
+    justify-content: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.one_section_btns {
+    gap: 10px;
+}
+
+.blocks_advantages {
+    gap: 10px;
+}
+
+.block_advantage {
+    gap: 15px;
+    justify-content: start;
+    color: white;
+}
+
+.make_content {
+    gap: 20px;
+}
+
+.make_block {
+    gap: 15px;
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+    max-width: 400px;
+}
+
+.make_block_img {
+    background: #1C1C1B;
+    width: 150px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.services_all_section {
+    background: white;
+    border-radius: 13px;
+    padding: 30px;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.device_blocks {
+    gap: 10px;
+    justify-content: start;
+}
+
+.device_blocks__img svg {
+    width: 20px;
+    height: 20px;
+}
+
+.device_blocks__img svg path {
+    fill: #3A99AE;
+}
+
+.title_service_block {
+    margin-bottom: 10px;
+}
+
+.services_all_blocks {
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.services_all_block {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.services_all_block .btn_full_blue{
+    padding: 5px 10px;
+}
+
+.info_container {
+    gap: 30px;
+}
+
+@media (max-width: 950px) {
+    .one_section {
+        height: auto;
+    }
+    .one_section_bottom {
+        flex-direction: column;
+    }
+    .big_img {
+        position: relative;
+        width: 200px;
+        right: 0;
+    }
+    .make_content {
+        flex-direction: column;
+    }
+    .make_block {
+        max-width: none;
+        width: 100%;
+    }
+    
+    .services_all_blocks{
+        gap: 30px;
+    }
+
+    .services_all_block {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .title_service_block {
+        display: none;
+    }
+
+    .time_service::before{
+        content: 'Время ремонта: ';
+        font-weight: bold;
+    }
+
+    .money_service::before {
+        content: 'Стоимость: ';
+        font-weight: bold;
+    }
+}

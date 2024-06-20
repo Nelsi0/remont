@@ -1,0 +1,138 @@
+.burger-menu {
+    font-size: 20px;
+    background: #3A99AE;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(58,153,174,1) 50%, rgba(22,85,102,1) 50%);
+    color: white;
+    transform: translateX(-150%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+    padding: 30px;
+    padding-top: 80px;
+}
+
+.fullscreen-menu.active {
+    transform: translateX(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.fullscreen-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container_menu {
+    width: 100%;
+    align-items: start;
+}
+.menu_bg {
+    width: 50%;
+    padding: 0 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.menu_bg a{
+    font-size: calc(18px + 12 *(100vw / 1300));
+}
+.item_menu {
+    width: 45%;
+}
+.submenu {
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.submenu a{
+    font-size: calc(14px + 2 * (100vw / 1300));
+}
+
+.submenu a::before {
+    content: '·';
+    margin-right: 10px;
+}
+
+.burger_seti {
+    gap: 10px;
+    justify-content: start  ;
+}
+
+.burger_seti_block {
+    width: 65px;
+    height: 65px;
+}
+.burger_seti_block svg {
+    width: 25px;
+    height: 25px;
+}
+.burger_seti_block svg path {
+    fill: white;
+}
+
+@media (max-width: 950px) {
+    .fullscreen-menu{
+        background: #3A99AE;
+    }
+    .container_menu {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .item_menu{
+        width: auto;
+        gap: 20px;
+    }
+    .menu_bg {
+        width: 100%;
+        gap: 30px;
+        align-items: start;
+    }
+    .submenu {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .burger_seti {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .menu_bg {
+        gap: 10px;
+    }
+    .item_menu {
+        gap: 0;
+    }
+
+    .burger_seti_block {
+        width: 35px;
+        height: 35px;
+    }
+    .burger_seti_block svg {
+        width: 15px;
+        height: 15px;
+    }
+}
